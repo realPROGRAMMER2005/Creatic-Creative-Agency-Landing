@@ -1,3 +1,5 @@
+/* Общие стили --------------------------------------------------------------------------------- */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -73,6 +75,8 @@ body {
 	border-top: 3px solid #6d95fc;
 }
 
+/* Header --------------------------------------------------------------------------------------- */
+
 .nav__inner {
 	display: flex;
 	justify-content: space-between;
@@ -90,6 +94,7 @@ body {
 
 .logo-title {
 	font-size: 50px;
+	text-align: center;
 }
 
 .logo-subtitle {
@@ -101,11 +106,23 @@ body {
 	vertical-align: middle;
 }
 
+@media (width <= 1350px) {
+	.nav__logo, .banner__inner {
+		margin-left: 50px !important;
+	}
+}
+	
+
+
+
+
+/* Banner --------------------------------------------------------------------------------------- */
+
 .banner {
 	position: relative;
 }
 
-.banner_inner {
+.banner__inner {
 	margin: 184px 0;
 	max-width: 524px;
 }
@@ -140,9 +157,11 @@ body {
 	z-index: -1;
 }
 
+/* About --------------------------------------------------------------------------------------- */
+
 .about__inner {
 	display: flex;
-	align-items: center;
+	align-items: center;	
 	gap: 110px;
 }
 
@@ -161,6 +180,9 @@ body {
 .about__button {
 	padding: 10px 30px;
 }
+
+
+/* Services -------------------------------------------------------------------------------------- */
 
 .services__inner {
 	display: flex;
@@ -220,6 +242,8 @@ body {
 	margin-bottom: 6px;
 }
 
+/* Statistics ------------------------------------------------------------------------------------ */
+
 .statistics__elemetns {
 	display: flex;
 	justify-content: space-between;
@@ -242,6 +266,10 @@ body {
 	margin-bottom: 65px;
 }
 
+
+/* Projects ------------------------------------------------------------------------------------- */
+
+
 .projects__subtitle {
 	display: flex;
 	align-items: center;
@@ -263,6 +291,7 @@ body {
 
 .swiper-slide img {
 	max-height: 620px;
+	height: auto;
 }
 
 .swiper-slide {
@@ -295,6 +324,9 @@ body {
 .swiper-wrapper {
 	margin-bottom: 49px;
 }
+
+
+/* Why Us --------------------------------------------------------------------------------------- */
 
 .why-us__inner {
 	margin-top: 111px;
@@ -349,6 +381,9 @@ body {
 	align-items: center;
 	gap: 11px;
 }
+
+
+/* Reviews --------------------------------------------------------------------------------------- */
 
 .reviews {
 	display: flex;
@@ -415,6 +450,11 @@ body {
 	margin-right: 50px;
 }
 
+.quote__user-mail {
+	margin-top: 10px;
+	font-style: italic;
+}
+
 .quote__text {
 	line-height: 166%;
 	margin-bottom: 40px;
@@ -426,5 +466,133 @@ body {
 }
 
 .reviews__button {
-	padding: 10px 30px;
+	padding: 15px 30px;
 }
+
+
+/* Contact us ----------------------------------------------------------------------------------- */
+
+.contact-us__inner {
+	margin-top: 134px;
+	display: flex;
+	align-items: center;
+	gap: 90px;
+	justify-content: space-evenly;
+}
+
+.contact-us__text {
+	max-width: 510px;
+	line-height: 166%;
+	margin-bottom: 35px;
+}
+
+.contact-us__data-element {
+	display: flex;
+	align-items: center;
+}
+
+.contact-us__data-description {
+	font-size: 16px;
+	line-height: 166%;
+}
+
+.contact-us__data-text {
+	margin-left: 20px;
+}
+
+.contact-us__data {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.contact-us__form {
+	background-color: #12192B;
+	padding: 50px 57px;
+	border-radius: 34px;
+	
+}
+
+.contact-us__form > form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form__label {
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+.contact-us__form > form > input {
+	height: 50px;
+	width: 426px;
+	margin-bottom: 23px;
+	background-color: transparent;
+	border: 1px solid white;
+ }
+
+ .form__message {
+	height: 176px !important;
+ }
+
+ .button-blue {
+	background-color: #6d95fc;
+	color: #12192B;
+ }
+
+ .form__button {
+	max-width: 186px;
+	margin-left: auto;
+	margin-right: auto
+ }
+
+
+ /* Footer --------------------------------------------------------------------------------------- */
+
+
+ .footer__inner {
+	margin-top: 134px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+
+ .footer__inner > * {
+	text-align: center;
+ }
+
+
+ .footer__navbar-links {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 22px;
+	margin-bottom: 19px;
+}
+
+.hr__footer {
+	margin:19px auto;
+	width: 101px;
+}
+
+.footer__text {
+	max-width: 717px;
+	margin-bottom: 30px;
+}
+
+.footer__media {
+	display: flex;
+	gap: 26px;
+
+}
+
+
+.footer__copyright {
+	margin-top: 185px;
+	margin-bottom: 73px;
+	font-weight: 100;
+	font-size: 14px;
+}
+
+
+
