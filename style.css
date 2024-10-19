@@ -315,7 +315,6 @@ body {
 @media (width < 600px) {
 	.services__inner {
 		margin-top: 35px;
-		margin-bottom: 35px;
 	}
 }
 
@@ -339,7 +338,7 @@ body {
 }
 
 .statistics__inner {
-	margin: 65px auto
+	margin: 0px auto 65px auto;
 }
 
 @media (width < 1000px) {
@@ -357,13 +356,7 @@ body {
 
 }
 
-@media (width < 600px) {
-	.statistics__inner {
-		margin-top: 30px;
-		margin-bottom: 0;
-	}
-	
-}
+
 
 @media (width < 530px) { 
 	.statistics__elements {
@@ -396,7 +389,7 @@ body {
 }
 
 .swiper-slide img {
-	max-height: 620px;
+	max-height: 520px;
 	height: auto;
 }
 
@@ -435,12 +428,17 @@ body {
 	margin-bottom: 49px;
 }
 
-@media (width <= 1460px) {
+@media (width <= 1280px) {
 	
 .swiper-slide img {
 		height: 42vw;
 
 	}
+}
+
+@media (width <= 750px) {
+	.swiper-slide img {
+		height: 90vw;
 }
 
 /* Why Us --------------------------------------------------------------------------------------- */
@@ -512,7 +510,7 @@ body {
 
 @media (width < 750px) {
 	.why-us__inner {	
-		margin-bottom: 40px;
+		margin-bottom: 150px;
 	}
 
 }
@@ -652,12 +650,9 @@ body {
 	}
 
 	.reviews__button {
-		margin-top: 25px;
+		margin-top: 180px;
 	}
 
-	.reviews__subtitle {
-		margin-bottom: 25px;
-	}
 
 
 }
