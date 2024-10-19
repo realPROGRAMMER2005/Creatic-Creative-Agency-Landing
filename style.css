@@ -650,9 +650,12 @@ body {
 	}
 
 	.reviews__button {
-		margin-top: 180px;
+		margin-top: 25px;
 	}
 
+	.reviews__subtitle {
+		margin-bottom: 25px;
+	}
 
 
 }
@@ -825,6 +828,4 @@ body {
 	font-weight: 100;
 	font-size: 14px;
 }
-
-
 
