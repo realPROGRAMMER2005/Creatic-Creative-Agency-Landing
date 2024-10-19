@@ -601,7 +601,7 @@ body {
 		display: none;
 	}
 }
-
+/* */
 @media (width <= 750px) {
 		.reviews__inner {
 		padding-top: 170px;
