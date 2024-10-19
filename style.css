@@ -29,6 +29,9 @@ body {
 	font-size: 48px;
 }
 
+
+ 
+
 .button {
 	font-size: 17px;
 	padding: 10px 16px;
@@ -36,6 +39,7 @@ body {
 	border: 2px solid #6d95fc;
 	border-radius: 2px;
 	cursor: pointer;
+	max-width: 400px;
 }
 
 .blue {
@@ -75,6 +79,14 @@ body {
 	border-top: 3px solid #6d95fc;
 }
 
+
+@media (width < 1280px) {
+	.about__inner, .banner__inner, .nav__inner, .reviews__inner, .contact-us__inner, .why-us__inner, .services__inner, .projects__inner, .footer__inner {
+
+		margin-inline: 20px !important; 
+	}
+}
+
 /* Header --------------------------------------------------------------------------------------- */
 
 .nav__inner {
@@ -84,7 +96,7 @@ body {
 	padding-top: 20px;
 }
 
-.nav-links {
+.nav__links {
 	display: flex;
 	gap: 53px;
 	list-style: none;
@@ -106,12 +118,36 @@ body {
 	vertical-align: middle;
 }
 
-@media (width <= 1350px) {
-	.nav__logo, .banner__inner {
-		margin-left: 50px !important;
-	}
+.nav__menu {
+	display: none;
+
 }
-	
+
+
+.nav__logo {
+	margin-right: 65px;
+}
+
+@media (width <= 1215px) {
+
+
+	.nav__menu {
+		display: block;
+	}
+
+}
+
+
+@media (width <= 500px) {
+	.nav__logo-title {
+		font-size: 40px;
+	}
+
+
+		.nav__links {
+		gap: 16px;
+}
+}
 
 
 
@@ -146,7 +182,7 @@ body {
 	max-width: 144px;
 }
 
-.text__banner {
+.banner__text {
 	margin-bottom: 41px;
 }
 
@@ -156,6 +192,7 @@ body {
 
 	z-index: -1;
 }
+
 
 /* About --------------------------------------------------------------------------------------- */
 
@@ -179,6 +216,21 @@ body {
 
 .about__button {
 	padding: 10px 30px;
+}
+
+@media (width <= 1005px) {
+	.about__inner  {
+		flex-direction: column-reverse;
+	}
+
+	.services__inner {
+		flex-direction: column;
+	}
+
+	
+
+
+	
 }
 
 
@@ -242,13 +294,18 @@ body {
 	margin-bottom: 6px;
 }
 
+@media (width < 446px) {
+	.services__cards {
+		grid-template-columns: 1fr;
+	}
+
+}
+
 /* Statistics ------------------------------------------------------------------------------------ */
 
-.statistics__elemetns {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 190px;
+.statistics__elements {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .statistics__element {
@@ -262,8 +319,30 @@ body {
 }
 
 .statistics__inner {
-	margin-top: 83px;
-	margin-bottom: 65px;
+	margin: 65px auto
+}
+
+@media (width < 1000px) {
+	.statistics__elements {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px 80px;
+	max-width: 500px;
+	}
+
+ .statistics__inner {
+	display: flex;
+	justify-content: center;
+
+ }
+
+
+}
+
+@media (width < 530px) { 
+	.statistics__elements {
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
 }
 
 
@@ -343,6 +422,18 @@ body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 40px;
+}
+
+@media (width <= 1000px) {
+	.why-us__below {
+		grid-template-columns: 1fr;
+
+		
+	}
+
+
+
+
 }
 
 .why-us__button-wrapper {
@@ -544,6 +635,12 @@ body {
 	max-width: 186px;
 	margin-left: auto;
 	margin-right: auto
+ }
+
+ @media (width < 1008px) {
+	.contact-us__inner {
+		flex-direction: column;
+	}
  }
 
 
