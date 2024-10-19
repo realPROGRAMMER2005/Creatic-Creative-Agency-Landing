@@ -29,9 +29,6 @@ body {
 	font-size: 48px;
 }
 
-
- 
-
 .button {
 	font-size: 17px;
 	padding: 10px 16px;
@@ -129,7 +126,6 @@ body {
 }
 
 @media (width <= 1215px) {
-
 
 	.nav__menu {
 		display: block;
@@ -238,8 +234,6 @@ body {
 	}
 
 
-
-	
 
 
 	
@@ -429,7 +423,6 @@ body {
 }
 
 @media (width <= 1280px) {
-	
 .swiper-slide img {
 		height: 42vw;
 
@@ -439,6 +432,7 @@ body {
 @media (width <= 750px) {
 	.swiper-slide img {
 		height: 90vw;
+}
 }
 
 /* Why Us --------------------------------------------------------------------------------------- */
@@ -828,4 +822,6 @@ body {
 	font-weight: 100;
 	font-size: 14px;
 }
+
+
 
