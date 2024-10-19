@@ -547,7 +547,7 @@ body {
 }
 
 .reviews__subtitle {
-	margin-bottom: 92px;
+	margin-bottom: 25px;
 	font-weight: 100;
 	letter-spacing: 8%;
 }
@@ -601,7 +601,7 @@ body {
 		display: none;
 	}
 }
-/* */
+
 @media (width <= 750px) {
 		.reviews__inner {
 		padding-top: 170px;
