@@ -321,13 +321,26 @@ body {
 .services__cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	gap: 0px;
 }
 
 .card {
 	max-width: 280px;
 	text-align: center;
+	background-image: linear-gradient(to bottom, black, black, rgb(4, 15, 49));
+
+	
 }
+
+.services__cards > .card:nth-child(2n) {
+		background-image: linear-gradient(to top, black, black, rgb(4, 15, 49));
+}
+
+
+
+
+
+
 
 .card__text {
 	font-size: 17px;
@@ -352,7 +365,7 @@ body {
 	margin-bottom: 6px;
 }
 
-@media (width < 480px) {
+@media (width < 550px) {
 	.services__cards {
 		grid-template-columns: 1fr;
 	}
@@ -360,12 +373,21 @@ body {
 	.services__title {
 		max-width: 300px;
 	}
+
+		.services__cards > .card:nth-child(2n - 1) {
+			background-image: linear-gradient(to top right, black, black, rgb(4, 15, 49)) !important;
+}
+
+	
 }
 
 @media (width < 600px) {
 	.services__inner {
 		margin-top: 35px;
 	}
+
+
+
 }
 
 
@@ -388,7 +410,11 @@ body {
 }
 
 .statistics__inner {
-	margin: 0px auto 65px auto;
+	margin: 65px auto 65px auto;
+}
+
+.statistics{
+	background-image: linear-gradient(to top right, black, rgb(4, 15, 49)) !important;
 }
 
 @media (width < 1000px) {
@@ -824,6 +850,10 @@ body {
 	margin-bottom: 20px;
 }
 
+.contact-us {
+	background-image: linear-gradient(to right top, black, black, rgb(4, 15, 49)) !important;
+}
+
 .contact-us__form > form > input {
 	height: 50px;
 	width: 426px;
@@ -886,6 +916,10 @@ body {
 	text-align: center;
  }
 
+ .footer {
+	background-image: linear-gradient(to bottom, black, black, rgb(4, 15, 49)) !important;
+ }
+
 
  .footer__navbar-links {
 	display: flex;
@@ -923,7 +957,7 @@ body {
 	font-size: 14px;
 }
 
-
+	
 
 @media screen and (width < 750px) {
 	.reviews__background-image img {
