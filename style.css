@@ -77,6 +77,7 @@ body {
 }
 
 
+
 @media (width < 1280px) {
 	.about__inner, .banner__inner, .nav__inner, .reviews__inner, .contact-us__inner, .why-us__inner, .services__inner, .projects__inner, .footer__inner {
 
@@ -189,6 +190,36 @@ body {
 	z-index: -1;
 }
 
+@media (width <= 480px) {
+	 
+
+	.text {
+		font-size: 17px;
+	}
+
+	.title {
+		font-size: 28px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.banner__title {
+		font-size: 30px;
+		max-width: 75vw;
+	}
+	
+	.suptitle {
+		font-size: 17px;
+		margin-bottom: 10px !important;
+	}
+
+	.hr {
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}
+
+
+}
+
 
 /* About --------------------------------------------------------------------------------------- */
 
@@ -219,6 +250,10 @@ body {
 	padding: 10px 30px;
 }
 
+.about__title {
+	max-width: 450px;
+}
+
 @media (width <= 1005px) {
 	.about__inner  {
 		flex-direction: column-reverse;
@@ -232,6 +267,17 @@ body {
 	.about__img img {
 		width: 75%;
 	}
+
+@media (width <= 480px) {
+	.about__description > * {
+		margin-bottom: 10px;
+	}
+
+	.about__description > *:last-child {
+		margin-top: 25px;
+	}
+	
+}
 
 
 
@@ -431,7 +477,8 @@ body {
 
 @media (width <= 750px) {
 	.swiper-slide img {
-		height: 90vw;
+		max-height: 46vh;
+		height: 100%;
 }
 }
 
@@ -507,6 +554,25 @@ body {
 		margin-bottom: 150px;
 	}
 
+}
+
+@media (width <= 480px) {
+	.why-us__below {
+		gap: 13px;
+	}
+
+	.why-us__button-wrapper {
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.why-us__inner {
+		margin-bottom: 50px;
+	}
+
+	.why-us__title {
+		margin-bottom: -6px !important;
+	}
 }
 
 
@@ -596,11 +662,7 @@ body {
 	padding: 15px 30px;
 }
 
-@media (width <= 850) {
-	.reviews__background-image > img {
-		display: none;
-	}
-}
+
 
 @media (width <= 750px) {
 		.reviews__inner {
@@ -621,6 +683,11 @@ body {
 
 	.reviews__quote {
 		margin: 0 ;
+	}
+
+	.reviews__inner {
+		padding-top: 25px;
+		padding-bottom: 50px;
 	}
 
 	
@@ -654,20 +721,23 @@ body {
 
 @media (width <= 480px) {
 	.reviews__quote {
-		width: 80%;
 		padding: 25px;
 	}
 
 	.quote__user-data {
-		margin-right: 16px;
+
 	}
 
 	.quote__double-quotes-icon img {
-		max-height: 20px;
+		max-height: 22px;
 	}
 
 	.quote__text {
 		margin-bottom: 20px;
+	}
+
+	.reviews__title {
+		max-width: 200px;
 	}
 }
 
@@ -823,3 +893,8 @@ body {
 
 
 
+@media screen and (width < 750px) {
+	.reviews__background-image img {
+		display: none !important;
+	}
+}
