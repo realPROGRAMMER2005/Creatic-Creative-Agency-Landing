@@ -10,8 +10,6 @@ function checkWindowWidth() {
 	} else if (window.innerWidth <= 1215) {
 		moveNavigationElements(2);
 	}
-
-
 }
 
 function moveNavigationElements(hiddenCount) {
@@ -61,4 +59,3 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
-AOS.init()
