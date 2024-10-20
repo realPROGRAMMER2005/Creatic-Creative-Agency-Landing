@@ -16,6 +16,7 @@ body {
 	font-style: normal;
 	font-size: 21px;
 	color: white;
+	overflow-x: hidden;
 }
 
 .text {
