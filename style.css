@@ -160,9 +160,7 @@ body {
 }
 
 
-.nav__menu > *:first-child{
-	margin-top: 50px;
-}
+
 
 .nav__menu-button {
 	cursor: pointer;
