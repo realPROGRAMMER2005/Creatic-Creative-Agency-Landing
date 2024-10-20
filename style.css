@@ -218,6 +218,7 @@ body {
 	}
 
 
+
 }
 
 
@@ -275,6 +276,10 @@ body {
 
 	.about__description > *:last-child {
 		margin-top: 25px;
+	}
+
+	.about__title {
+		max-width: 300px;
 	}
 	
 }
@@ -346,9 +351,13 @@ body {
 	margin-bottom: 6px;
 }
 
-@media (width < 446px) {
+@media (width < 480px) {
 	.services__cards {
 		grid-template-columns: 1fr;
+	}
+
+	.services__title {
+		max-width: 300px;
 	}
 }
 
@@ -739,17 +748,25 @@ body {
 	}
 
 	.reviews__title {
-		max-width: 200px;
+		max-width: 350px;
+		margin-bottom: 0 !important;
+		font-size: 40px !important;
 	}
 
 	.hr__reviews {
 		margin-top: 10px !important;
-		margin-bottom: 10px !important;
+		margin-bottom: 20px !important;
 	}
 
-	.reviews__title {
-		margin-bottom: 0 !important;
+
+	.reviews__button {
+		margin-top: 75px;
 	}
+
+	.reviews__subtitle {
+		margin-bottom: 50px;
+	}
+	 
 }
 
 
@@ -812,6 +829,7 @@ body {
 	margin-bottom: 23px;
 	background-color: transparent;
 	border: 1px solid white;
+	padding-inline: 10px;
  }
 
  .form__message {
