@@ -479,7 +479,17 @@ body {
 	.swiper-slide img {
 		max-height: 46vh;
 		height: 100%;
+}	
 }
+
+@media (width <= 480px) {
+	.projects__subtitle {
+		margin-bottom: 20px;
+	}
+
+	.projects__title {
+		max-width: 280px;
+	}
 }
 
 /* Why Us --------------------------------------------------------------------------------------- */
@@ -720,10 +730,6 @@ body {
 		padding: 25px;
 	}
 
-	.quote__user-data {
-
-	}
-
 	.quote__double-quotes-icon img {
 		max-height: 22px;
 	}
@@ -734,6 +740,15 @@ body {
 
 	.reviews__title {
 		max-width: 200px;
+	}
+
+	.hr__reviews {
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.reviews__title {
+		margin-bottom: 0 !important;
 	}
 }
 
