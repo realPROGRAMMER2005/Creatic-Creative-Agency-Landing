@@ -61,3 +61,5 @@ var swiper = new Swiper('.mySwiper', {
 		},
 	},
 })
+
+AOS.init()
