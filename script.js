@@ -12,7 +12,6 @@ function checkWindowWidth() {
 	}
 
 
-
 }
 
 function moveNavigationElements(hiddenCount) {
