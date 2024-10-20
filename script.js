@@ -1,42 +1,24 @@
-function checkWindowWidth() {
-	if (window.innerWidth > 1215) {
-		moveNavigationElements(0);
-	} else if (window.innerWidth <= 745) {
-		moveNavigationElements(6);
-	} else if (window.innerWidth <= 890) {
-		moveNavigationElements(4);
-	} else if (window.innerWidth <= 1030) {
-		moveNavigationElements(3);
-	} else if (window.innerWidth <= 1215) {
-		moveNavigationElements(2);
+const navigationMenu = document.getElementById('navigationMenu')
+
+window.addEventListener('resize', function () {
+	if (windwon.innerWidth >= 1240) {
+		hideNavigationMenu();
 	}
+})
+
+
+
+
+
+
+function showNavigationMenu() {
+	navigationMenu.style.top = '10vh';
 }
 
-function moveNavigationElements(hiddenCount) {
-	const navigationElements = Array.from(
-		document.getElementsByClassName('nav__menu-element')
-	)
-
-	if (hiddenCount === 0) {
-		navigationElements.forEach(element => {
-			element.style.display = 'block'
-		})
-	} else {
-		navigationElements.forEach((element, index) => {
-			if (index >= navigationElements.length - hiddenCount) {
-				element.style.display = 'none'
-			} else {
-				element.style.display = 'block'
-			}
-		})
-	}
-
-
+function hideNavigationMenu() {
+	navigationMenu.style.top = '-100vh'
 }
 
-window.addEventListener('resize', checkWindowWidth)
-
-checkWindowWidth();
 
 var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
@@ -59,3 +41,16 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
+const buttonBurger = document.querySelector('.button-burger');
+let isMenuOpen = false
+buttonBurger.addEventListener('click', () => {
+	if (!isMenuOpen) {
+		isMenuOpen = true;
+		buttonBurger.classList.add('open');
+		showNavigationMenu();
+	} else {
+		isMenuOpen = false;
+		buttonBurger.classList.remove('open')
+		hideNavigationMenu();
+	}
+})

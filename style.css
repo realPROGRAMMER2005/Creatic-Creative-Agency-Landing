@@ -88,12 +88,20 @@ body {
 
 /* Header --------------------------------------------------------------------------------------- */
 
+.header > * {
+	z-index: 1000;
+}
+
+
 .nav__inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
 }
+
+
+
 
 .nav__links {
 	display: flex;
@@ -117,22 +125,67 @@ body {
 	vertical-align: middle;
 }
 
-.nav__menu {
+.nav__menu-button {
 	display: none;
 
 }
+
+.nav__menu {
+	position: absolute;
+	top: -50vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	z-index: 1;
+	gap: 20px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+@media (width >= 1240px) {
+	.nav__menu {
+		display: none;
+		
+	}
+}
+
+.nav__menu-element-small {
+	list-style: none;
+}
+
+.nav__menu > *:last-child{
+	margin-bottom: 50px;
+}
+
+
+.nav__menu > *:first-child{
+	margin-top: 50px;
+}
+
+.nav__menu-button {
+	cursor: pointer;
+}
+
 
 
 .nav__logo {
 	margin-right: 65px;
 }
 
-@media (width <= 1215px) {
 
-	.nav__menu {
+
+@media (width <= 1230px) {
+
+	.nav__menu-button {
 		display: block;
+
 	}
 
+	.nav__menu-element {
+		display: none;
+	}
 }
 
 
@@ -204,8 +257,8 @@ body {
 	}
 
 	.banner__title {
-		font-size: 30px;
-		max-width: 75vw;
+		font-size: 43px !important;
+		max-width: 88vw;
 	}
 	
 	.suptitle {
@@ -225,11 +278,18 @@ body {
 
 /* About --------------------------------------------------------------------------------------- */
 
+.about {
+	background-image: linear-gradient(to left, black, black, rgb(4, 15, 49)) !important;
+}
+
 .about__inner {
 	display: flex;
 	align-items: center;	
 	gap: 110px;
+	margin-top: 100px;
 }
+
+
 
 .about__suptitle {
 	margin-bottom: 26px;
@@ -257,6 +317,11 @@ body {
 }
 
 @media (width <= 1005px) {
+	.about {
+	background-image: linear-gradient(to left, black, black, rgb(4, 15, 49)) !important;
+	}
+
+
 	.about__inner  {
 		flex-direction: column-reverse;
 		gap: 0px;
@@ -530,6 +595,11 @@ body {
 
 /* Why Us --------------------------------------------------------------------------------------- */
 
+.why-us {
+	background-image: linear-gradient(to bottom right, black, black, rgb(4, 15, 49)) !important;
+}
+
+
 .why-us__inner {
 	margin-top: 111px;
 	margin-bottom: 253px;
@@ -636,6 +706,10 @@ body {
 
 .reviews > * {
 	flex-shrink: 0;
+}
+
+.reviews {
+	max-height: 932px;
 }
 
 .reviews__inner {
@@ -952,10 +1026,11 @@ body {
 
 .footer__copyright {
 	margin-top: 185px;
-	margin-bottom: 73px;
+	margin-bottom: 25px;
 	font-weight: 100;
 	font-size: 14px;
 }
+
 
 	
 
@@ -964,3 +1039,47 @@ body {
 		display: none !important;
 	}
 }
+
+
+.button-burger {
+	width: 20px;
+	height: 2px;
+	background: white;
+	border-radius: 1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.button-burger::before, .button-burger::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 3.0px;
+	background: white;
+	border-radius: 2px;
+	transition: all 0.2s ease-in-out;
+}
+
+.button-burger::before {
+	transform: translateY(-8px);
+}
+
+.button-burger::after {
+	transform: translateY(8px);
+}
+
+.button-burger.open 
+{
+	transform: translateX(-10px);
+	background: transparent;
+}
+
+.button-burger.open::before {
+	transform: rotate(45deg) translate(5px, -5px);
+	width: 25px;
+}
+
+.button-burger.open::after {
+	transform: rotate(-45deg) translate(5px, 5px);
+	width: 25px;
+}
+
