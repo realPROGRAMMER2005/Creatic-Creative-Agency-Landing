@@ -1,24 +1,20 @@
-const navigationMenu = document.getElementById('navigationMenu');
-
+const navigationMenu = document.getElementById('navigationMenu')
 
 window.addEventListener('resize', function () {
 	if (window.innerWidth >= 1240) {
-		hideNavigationMenu();
+		hideNavigationMenu()
 		isMenuOpen = false
 		buttonBurger.classList.remove('open')
 	}
 })
 
-
-
 function showNavigationMenu() {
-	navigationMenu.style.top = '10vh';
+	navigationMenu.style.top = '10vh'
 }
 
 function hideNavigationMenu() {
 	navigationMenu.style.top = '-100vh'
 }
-
 
 var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
@@ -41,24 +37,19 @@ var swiper = new Swiper('.mySwiper', {
 	},
 })
 
-const buttonBurger = document.querySelector('.button-burger');
+const buttonBurger = document.querySelector('.button-burger')
+const buttonBurgerWrapper = document.querySelector('.button-burger-wrapper')
 let isMenuOpen = false
-buttonBurger.addEventListener('click', () => {
+buttonBurgerWrapper.addEventListener('click', () => {
 	if (!isMenuOpen) {
-		isMenuOpen = true;
-		buttonBurger.classList.add('open');
-		showNavigationMenu();
+		isMenuOpen = true
+		buttonBurger.classList.add('open')
+		showNavigationMenu()
 	} else {
-		isMenuOpen = false;
+		isMenuOpen = false
 		buttonBurger.classList.remove('open')
-		hideNavigationMenu();
+		hideNavigationMenu()
 	}
 })
 
-function hideMainNavigationMenu() {
-	
-}
-
-
-
-
+function hideMainNavigationMenu() {}
