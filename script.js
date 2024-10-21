@@ -1,13 +1,11 @@
-const navigationMenu = document.getElementById('navigationMenu')
+const navigationMenu = document.getElementById('navigationMenu');
+
 
 window.addEventListener('resize', function () {
 	if (windwon.innerWidth >= 1240) {
 		hideNavigationMenu();
 	}
 })
-
-
-
 
 
 
@@ -54,3 +52,11 @@ buttonBurger.addEventListener('click', () => {
 		hideNavigationMenu();
 	}
 })
+
+function hideMainNavigationMenu() {
+	
+}
+
+
+
+
