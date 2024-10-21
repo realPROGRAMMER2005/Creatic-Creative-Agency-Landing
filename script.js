@@ -4,6 +4,8 @@ const navigationMenu = document.getElementById('navigationMenu');
 window.addEventListener('resize', function () {
 	if (window.innerWidth >= 1240) {
 		hideNavigationMenu();
+		isMenuOpen = false
+		buttonBurger.classList.remove('open')
 	}
 })
 
